@@ -1,52 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipe Alura Start</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Colegio Estadual Floripa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #0074d9;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+        }
+        .image-container img {
+            width: 300px;
+            border-radius: 10px;
+        }
+        .text-section {
+            margin-top: 10px;
+            text-align: left;
+            display: inline-block;
+        }
+        .students {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+        }
+        .students img {
+            width: 50px;
+            height: 50px;
+        }
+        .accessibility-menu {
+            background-color: #0074d9;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .accessibility-menu button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
-
 <body>
-    <header class="cabecalho">
-        <img class="cabecalho-imagem" src="alurastart logo.png" alt="logo da alura start">
-        <ul class="cabecalho-lista">
-            <li class="cabecalho-lista-item">Escola</li>
-            <li class="cabecalho-lista-item">Estudante</li>
-        </ul>
-    </header>
-    <section class="escola">
-        <div class="escola-div-conteudo">
-            <h2 class="escola-titulo">Sobre a Escola</h2>
-            <p class="escola-texto-um">A Escola Alura foi fundada em 2010 e tem como objetivo ensinar Pensamento
-                Computacional, através do ensino de Programação.</p>
-            <p class="escola-texto-dois">A turma mais estudiosa e famosa é a Segunda Série A. Nós somos super unidos e a
-                turma favorita por todos os professores e professoras que nos ajudam!</p>
+    <div class="header">COLEGIO ESTADUAL FLORIPA <br> TEIXEIRA DE FARIA <span style="float:right;">enrique</span></div>
+    
+    <div class="content">
+        <h2>O Colegio</h2>
+        <div class="image-container">
+            <img src="imagem_colegio.jpg" alt="Imagem do colégio">
         </div>
-        <img class="escola-imagem" src="Formula-bro.png" alt="imagem que representa uma professora em sala de aula">
-    </section>
-    <section class="estudante">
-        <h2 class="estudante-titulo">Quem são nossos estudantes?</h2>
-        <div class="estudante-div">
-            <img class="estudante-imagem" src="Marcelo.jpeg" alt="foto do marcelo">
-            <h3 class="estudante-nome">Marcelo</h3>
-            <img class="estudante-icone" src="github.png" alt="icone github">
-            <img class="estudante-icone" src="linkedin.png" alt="icone linkedin">
-            <img class="estudante-icone" src="instagram.png" alt="icone instagram">
+        <div class="text-section">
+            <p>bla bla bla</p>
+            <p>bla bla bla</p>
+            <p>bla bla bla</p>
+            <p>la bla bla bla</p>
+            <p>bla bla bla</p>
         </div>
-        <div class="estudante-div">
-            <img class="estudante-imagem" src="Marcelo.jpeg" alt="foto do marcelo">
-            <h3 class="estudante-nome">Marcelo</h3>
-            <img class="estudante-icone" src="github.png" alt="icone github">
-            <img class="estudante-icone" src="linkedin.png" alt="icone linkedin">
-            <img class="estudante-icone" src="instagram.png" alt="icone instagram">
-        </div>
-    </section>
-</body>
+    </div>
+    
+    <div class="header">Alunos</div>
+    <div class="students">
+        <img src="aluno1.jpg" alt="Aluno">
+        <img src="aluno2.jpg" alt="Aluno">
+        <img src="aluno3.jpg" alt="Aluno">
+        <img src="aluno4.jpg" alt="Aluno">
+        <img src="aluno5.jpg" alt="Aluno">
+        <img src="aluno6.jpg" alt="Aluno">
+        <img src="aluno7.jpg" alt="Aluno">
+        <img src="aluno8.jpg" alt="Aluno">
+        <img src="aluno9.jpg" alt="Aluno">
+    </div>
+    
+    <div class="accessibility-menu">
+        <button onclick="increaseFontSize()">A+</button>
+        <button onclick="decreaseFontSize()">A-</button>
+        <button onclick="toggleContrast()">Alto Contraste</button>
+    </div>
 
+    <script>
+        function increaseFontSize() {
+            document.body.style.fontSize = 'larger';
+        }
+
+        function decreaseFontSize() {
+            document.body.style.fontSize = 'smaller';
+        }
+
+        function toggleContrast() {
+            document.body.classList.toggle('high-contrast');
+        }
+    </script>
+</body>
 </html>
+
