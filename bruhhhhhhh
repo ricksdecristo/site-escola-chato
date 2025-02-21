@@ -76,15 +76,15 @@
     
     <div class="header">Alunos</div>
     <div class="students">
-        <img src="aluno1.jpg" alt="Aluno">
-        <img src="aluno2.jpg" alt="Aluno">
-        <img src="aluno3.jpg" alt="Aluno">
-        <img src="aluno4.jpg" alt="Aluno">
-        <img src="aluno5.jpg" alt="Aluno">
-        <img src="aluno6.jpg" alt="Aluno">
-        <img src="aluno7.jpg" alt="Aluno">
-        <img src="aluno8.jpg" alt="Aluno">
-        <img src="aluno9.jpg" alt="Aluno">
+        <img src="nerd_emoji.png" alt="Aluno">
+        <img src="nerd_emoji.png" alt="Aluno">
+        <img src="nerd_emoji.png" alt="Aluno">
+        <img src="nerd_emoji.png" alt="Aluno">
+        <img src="nerd_emoji.png" alt="Aluno">
+        <img src="nerd_emoji.png" alt="Aluno">
+        <img src="nerd_emoji.png" alt="Aluno">
+        <img src="nerd_emoji.png" alt="Aluno">
+        <img src="nerd_emoji.png" alt="Aluno">
     </div>
     
     <div class="accessibility-menu">
@@ -108,4 +108,3 @@
     </script>
 </body>
 </html>
-
